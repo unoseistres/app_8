@@ -775,7 +775,7 @@ var app = {
               $("#drop").empty();
      
             }else{
-	            $("#b1c" + counter).remove();
+	          $("#b1c" + counter).remove();
               $("#drop").hide();
               $("#drop").empty();
 	             
