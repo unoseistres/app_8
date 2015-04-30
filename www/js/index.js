@@ -819,8 +819,10 @@ var app = {
         
 
         alert("saving drawing");
-         var c= dataURL;
+         var jpgQuality = 0.60;
+         var c= canvas.toDataURL('can',jpgQuality);
 		 socket.emit('message', c);
+		 
 		 console.log("emit");
       }
       
