@@ -836,7 +836,17 @@ var app = {
  
       function tapHandler( event ){
           if ($(event.target)){
+	     
+		  
+	    
           $(this).addClass( "tap" );
+          
+          var h1= "happy";
+		
+		  socket.emit('face', h1);
+		  console.log("emit h1"); 
+		  console.log(h1); 
+          
           console.log("happy1");
           $("#happy2").removeClass( "tap" );
           $("#happy3").removeClass( "tap" );
@@ -844,6 +854,7 @@ var app = {
           $("#happy5").removeClass( "tap" );
         }
       }
+         
   });
 
       $(function(){

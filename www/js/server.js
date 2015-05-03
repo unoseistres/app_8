@@ -50,9 +50,17 @@ io.sockets.on('connection',
                                 // io.sockets.emit('message', "this goes to everyone");
                         }
                 );
+   
+          	socket.on('face', function(data) {
+			console.log("face" + data);
+			io.sockets.emit('face', data);
+		});
+                
 
                 socket.on('disconnect', function() {
                         console.log("Client has disconnected");
                 });
+                
         }
+     
 );
