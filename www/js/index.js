@@ -863,6 +863,12 @@ var app = {
       function tapHandler( event ){
           if ($(event.target)){
           $(this).addClass( "tap" );
+          
+          var h2= "a little happy";
+          socket.emit('face', h2);
+		  console.log("emit h2"); 
+		  console.log(h2);
+		  
           console.log("happy2");
           $("#happy1").removeClass( "tap" );
           $("#happy3").removeClass( "tap" );
@@ -878,6 +884,12 @@ var app = {
       function tapHandler( event ){
           if ($(event.target)){
           $(this).addClass( "tap" );
+          
+          var h3= "indifferent";
+          socket.emit('face', h3);
+		  console.log("emit h3"); 
+		  console.log(h3);
+		  
           console.log("happy3");
           $("#happy1").removeClass( "tap" );
           $("#happy2").removeClass( "tap" );
@@ -893,6 +905,12 @@ var app = {
       function tapHandler( event ){
           if ($(event.target)){
           $(this).addClass( "tap" );
+          
+          var h4= "sad";
+          socket.emit('face', h4);
+		  console.log("emit h4"); 
+		  console.log(h4);
+		  
           console.log("happy4");
           $("#happy1").removeClass( "tap" );
           $("#happy2").removeClass( "tap" );
@@ -908,6 +926,12 @@ var app = {
       function tapHandler( event ){
          if ($(event.target)){
          $(this).addClass( "tap" );
+         
+          var h5= "scared";
+          socket.emit('face', h5);
+		  console.log("emit h5"); 
+		  console.log(h5);
+		  
         console.log("happy5");
         $("#happy1").removeClass( "tap" );
         $("#happy2").removeClass( "tap" );

@@ -51,20 +51,10 @@ io.sockets.on('connection',
                         }
                 );
    
-                   socket.on('face',
-                        // Run this function when a message is sent
-                        function (data) {
-//                                 console.log("message: " msg);
-                                console.log("face");
-
-                                // Call "broadcast" to send it to all clients (except sender), this is equal to
-                                // socket.broadcast.emit('message', data);
-                                socket.broadcast.send('face', data);
-
-                                // To all clients, on io.sockets instead
-                                // io.sockets.emit('message', "this goes to everyone");
-                        }
-                );
+          	socket.on('face', function(data) {
+			console.log("face" + data);
+			io.sockets.emit('face', data);
+		});
                 
 
                 socket.on('disconnect', function() {
@@ -72,4 +62,5 @@ io.sockets.on('connection',
                 });
                 
         }
+     
 );
