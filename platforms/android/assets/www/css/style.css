@@ -427,7 +427,7 @@ margin-left: 700px;
     height:400px;
    
     position: absolute;
-    border: dotted 1px black;
+    border: dotted 15px black;
 
     /*display: table-cell;
     vertical-align: middle;*/
@@ -545,7 +545,7 @@ ul#smiley li {
 	/*top: 93px;
 	left:49px;*/
 	z-index: 1;
-	border: red dotted;
+	border: red dotted 3px;
 }
 
 
@@ -612,14 +612,7 @@ ul#smiley li {
   width: 47px;
 }
 
-/*.minicolors-slider, .minicolors-opacity-slider {
-  left: 242px;
-  width: 30px;
-  height: 250px;
-  background-position: 0 0;
-  background-size: 5000% 100%;
-}
-*/
+
 .minicolors .minicolors-grid { /* change size of color grid */
   width: 376px;
   height: 378px;
@@ -628,15 +621,9 @@ ul#smiley li {
 }
 
 
-
-/*#can2{
-	background-image: url("img/crayon.png");
-
-}*/
 #p6{
 	margin-bottom: 80px;
 }
-/*#color-picker{
-	width: 200px;
-	height:300px;
-}*/
+
+
+
