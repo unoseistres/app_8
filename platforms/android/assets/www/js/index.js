@@ -241,18 +241,16 @@ var app = {
 
         //erases with the same size stroke  
         function myEraser2(){
+
 /*
-        ctx2.globalCompositeOperation = "destination-out";
-        ctx2.strokeStyle = "rgba(0,0,0,1)";
-        var outlineImage = new Image();
-            outlineImage.src = "img/girlsoccer.png";
-             ctx2.drawImage(outlineImage,xc,yc,sizey,sizex);
-*/
 		$( "#eraser2" ).click(function() {
-			console.log( "i am an eraser" );
+// 			console.log( "i am an eraser" );
 			coloring2= "rgba(255,255,255,1)";
 			});
 			
+*/
+
+coloring2= "rgba(255,255,255,1)";
 			
 
       // drawLine(ctx,touchX,touchY,s);
@@ -260,23 +258,24 @@ var app = {
    
         //goes back to the proportties of marker 
         function myMarker2(){
-/*
-        ctx2.globalCompositeOperation = "source-over";
-        ctx2.strokeStyle = c2;
-        // var c = document.getElementById("color").value;
-        $('.demo').css('backgroundColor', '#' + hex);
-*/
 
+		coloring2= c2;
+		
+/*
 		$( "#myMarker2" ).click(function() {
-			console.log( "i am a marker" );
-			console.log(coloring2);
-			
+
 			coloring2= c2;
 			});
+*/
 			
     }
     
-    
+/*
+    $( "#myMarker2" ).click(function() {
+
+			coloring2= c2;
+			});    
+*/
 
        // Clear the canvas context using the canvas width and height
         function clearCanvas2(canvas2,ctx2) {
@@ -684,7 +683,7 @@ var app = {
  
  
       $(element).css('position', 'absolute');
-      $(element).css('top','300px');
+      $(element).css('top','100px');
       $(element).css('right', '400px');
       $(element).css('z-index', '99999');
       $(element).css('width', '100');
