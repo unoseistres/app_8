@@ -631,6 +631,7 @@ coloring2= "rgba(255,255,255,1)";
 
 
 ////////////////////////////////////////////////////external panel
+/*
 
   var panel = '<div data-role="panel" class="panel" id="mypanel" data-position="right" data-display="overlay" data-position-fixed="true" ></div>';
 
@@ -780,6 +781,10 @@ coloring2= "rgba(255,255,255,1)";
               var img=document.getElementById(event.target.id);
 
               ctx.save();
+              //back to mode of marker and no longer uses earaser mode 
+              ctx.globalCompositeOperation = "source-over";
+			 
+              
               console.log(rotation * TO_RADIANS);
 
               ctx.drawImage(img,position.left,position.top,width*scale,height*scale);
@@ -811,6 +816,7 @@ coloring2= "rgba(255,255,255,1)";
 });
 
 ////////////////////////////////////CLOUD
+*/
 
 
 //slider
@@ -844,7 +850,7 @@ coloring2= "rgba(255,255,255,1)";
          var jpgQuality = 0.60;
          var c= canvas.toDataURL('can',jpgQuality);
         
-		 socket.emit('message', c);
+// 		 socket.emit('message', c);
 		 console.log("emit");		
 		
 		
@@ -865,7 +871,7 @@ coloring2= "rgba(255,255,255,1)";
           
           var h1= "happy";
 		
-		  socket.emit('face', h1);
+// 		  socket.emit('face', h1);
 		  console.log("emit h1"); 
 		  console.log(h1); 
           
@@ -887,7 +893,7 @@ coloring2= "rgba(255,255,255,1)";
           $(this).addClass( "tap" );
           
           var h2= "a little happy";
-          socket.emit('face', h2);
+//           socket.emit('face', h2);
 		  console.log("emit h2"); 
 		  console.log(h2);
 		  
@@ -908,7 +914,7 @@ coloring2= "rgba(255,255,255,1)";
           $(this).addClass( "tap" );
           
           var h3= "indifferent";
-          socket.emit('face', h3);
+//           socket.emit('face', h3);
 		  console.log("emit h3"); 
 		  console.log(h3);
 		  
@@ -929,7 +935,7 @@ coloring2= "rgba(255,255,255,1)";
           $(this).addClass( "tap" );
           
           var h4= "sad";
-          socket.emit('face', h4);
+//           socket.emit('face', h4);
 		  console.log("emit h4"); 
 		  console.log(h4);
 		  
@@ -950,7 +956,7 @@ coloring2= "rgba(255,255,255,1)";
          $(this).addClass( "tap" );
          
           var h5= "scared";
-          socket.emit('face', h5);
+//           socket.emit('face', h5);
 		  console.log("emit h5"); 
 		  console.log(h5);
 		  

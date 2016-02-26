@@ -25,6 +25,7 @@
 /Users/dickweed/documents/app_7/platforms/android/ant-build/res/drawable-xxhdpi/icon.png \
 /Users/dickweed/documents/app_7/platforms/android/assets/_where-is-www.txt \
 /Users/dickweed/documents/app_7/platforms/android/assets/www \
+/Users/dickweed/documents/app_7/platforms/android/assets/www/android \
 /Users/dickweed/documents/app_7/platforms/android/assets/www/cordova.js \
 /Users/dickweed/documents/app_7/platforms/android/assets/www/cordova_plugins.js \
 /Users/dickweed/documents/app_7/platforms/android/assets/www/css \
